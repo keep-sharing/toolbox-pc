@@ -1,0 +1,701 @@
+﻿
+/***************************************************************** QStackedWidget ************************/
+QStackedWidget#stackedWidget
+{
+	background-color:#edf2f6;
+}
+QWidget#scrollAreaWidgetContents_2,
+QWidget#scrollAreaWidgetContents,
+QWidget#serialBasic_scrollAreaWidget,
+QWidget#rs485_scrollAreaWidget,
+QWidget#rs232_scrollAreaWidget,
+QWidget#n1Basic_scrollAreaWidget,
+QWidget#n1Serial_scrollAreaWidget,
+QWidget#n1AI_scrollAreaWidget,
+QWidget#n1GPIO_scrollAreaWidget,
+QWidget#modbusChannel_scrollAreaWidget,
+QWidget#loraBasic_scrollAreaWidget,
+QWidget#loraChannel_scrollAreaWidgetContents,
+QWidget#loraAdvanced_scrollAreaWidget,
+QWidget#channel_scrollAreaWidget,
+QWidget#deviceSetting_scrollAreaWidget,
+QWidget#scrollAreaWidgetContents_3
+{
+	background-color: rgb(255, 255, 255);
+}
+
+QScrollArea#loraStatus_scrollArea
+{
+	font-size:15px;
+	font-family:"Arial" ;
+	border:none;
+	background-color:#edf2f6;
+}
+QWidget#loraStatusWidgetContents
+{
+	background-color:#edf2f6;
+}
+/***************************************************************** QPushButton ************************/
+QPushButton#nfcReadLora_btn,
+QPushButton#loraApply_btn,
+QPushButton#nfcReadStatus_btn,
+QPushButton#nfcReadDevSetting_btn,
+QPushButton#nfcWriteDevSetting_btn,
+QPushButton#nfcStatusPower_btn,
+QPushButton#awsCAImportFile_btn,
+QPushButton#awsCADelFile_btn,
+QPushButton#awsCliCerSelectFile_btn,
+QPushButton#awsCliCerImportFile_btn,
+QPushButton#awsCliCerDelFile_btn,
+QPushButton#awsCliKeySelectFile_btn,
+QPushButton#awsCliKeyImportFile_btn,
+QPushButton#awsCliKeyDelFile_btn,
+QPushButton#awsCASelectFile_btn,
+QPushButton#mqttTlsCASelectFile_btn,
+QPushButton#mqttTlsCAImportFile_btn,
+QPushButton#mqttTlsCADelFile_btn,
+QPushButton#mqttTlsCliCerSelectFile_btn,
+QPushButton#mqttTlsCliCerImportFile_btn,
+QPushButton#mqttTlsCliCerDelFile_btn,
+QPushButton#mqttTlsCliKeySelectFile_btn,
+QPushButton#mqttTlsCliKeyImportFile_btn,
+QPushButton#mqttTlsCliKeyDelFile_btn,
+QPushButton#generalSave_btn,
+QPushButton#modbusAwsCASelectFile_btn,
+QPushButton#modbusAwsCAImportFile_btn,
+QPushButton#modbusAwsCADelFile_btn,
+QPushButton#modbusAwsCliCerSelectFile_btn,
+QPushButton#modbusAwsCliCerImportFile_btn,
+QPushButton#modbusAwsCliCerDelFile_btn,
+QPushButton#modbusAwsCliKeySelectFile_btn,
+QPushButton#modbusAwsCliKeyImportFile_btn,
+QPushButton#modbusAwsCliKeyDelFile_btn,
+QPushButton#modbusMqttTlsCASelectFile_btn,
+QPushButton#modbusMqttTlsCAImportFile_btn,
+QPushButton#modbusMqttTlsCADelFile_btn,
+QPushButton#modbusMqttTlsCliCerSelectFile_btn,
+QPushButton#modbusMqttTlsCliCerImportFile_btn,
+QPushButton#modbusMqttTlsCliCerDelFile_btn,
+QPushButton#modbusMqttTlsCliKeySelectFile_btn,
+QPushButton#modbusMqttTlsCliKeyImportFile_btn,
+QPushButton#modbusMqttTlsCliKeyDelFile_btn,
+QPushButton#modbusBasicSave_btn,
+QPushButton#rs232Save_btn,
+QPushButton#rs485Save_btn,
+QPushButton#deviceSettingSave_btn,
+QPushButton#nfcDeviceTimeSync_btn,
+QPushButton#modbusChannelFetch1_btn,
+QPushButton#modbusChannelFetch2_btn,
+QPushButton#modbusChannelFetch3_btn,
+QPushButton#modbusChannelFetch4_btn,
+QPushButton#modbusChannelFetch5_btn,
+QPushButton#modbusChannelFetch6_btn,
+QPushButton#modbusChannelFetch7_btn,
+QPushButton#modbusChannelFetch8_btn,
+QPushButton#modbusChannelFetch9_btn,
+QPushButton#modbusChannelFetch10_btn,
+QPushButton#modbusChannelFetch11_btn,
+QPushButton#modbusChannelFetch12_btn,
+QPushButton#modbusChannelFetch13_btn,
+QPushButton#modbusChannelFetch14_btn,
+QPushButton#modbusChannelFetch15_btn,
+QPushButton#modbusChannelFetch16_btn,
+QPushButton#n1ChannelFetch1_btn,
+QPushButton#n1ChannelFetch2_btn,
+QPushButton#n1ChannelFetch3_btn,
+QPushButton#n1ChannelFetch4_btn,
+QPushButton#n1ChannelFetch5_btn,
+QPushButton#n1ChannelFetch6_btn,
+QPushButton#n1ChannelFetch7_btn,
+QPushButton#n1ChannelFetch8_btn,
+QPushButton#calibrationSettingTemp_btn,
+QPushButton#calibrationSettingHumi_btn,
+QPushButton#calibrationSettingIllumi_btn,
+QPushButton#calibrationSettingCo2_btn,
+QPushButton#calibrationSettingTVOC_btn,
+QPushButton#calibrationSettingBarometric_btn,
+QPushButton#calibrationSettingSoil_btn,
+QPushButton#calibrationSettingLiquid_btn,
+QPushButton#calibrationSettingDistance_btn,
+QPushButton#calibrationSettingPAR_btn
+{
+	background-color: rgb(94, 154, 234);
+	color: rgb(255, 255, 255);
+	border-radius:5px 5px 5px 5px;
+	font-size:12px;font-family:"Arial"
+}
+QPushButton#nfcReadLora_btn:enabled,
+QPushButton#loraApply_btn:enabled,
+QPushButton#nfcReadStatus_btn:enabled,
+QPushButton#nfcReadDevSetting_btn:enabled,
+QPushButton#nfcWriteDevSetting_btn:enabled,
+QPushButton#nfcStatusPower_btn:enabled,
+QPushButton#awsCAImportFile_btn:enabled,
+QPushButton#awsCADelFile_btn:enabled,
+QPushButton#awsCliCerSelectFile_btn:enabled,
+QPushButton#awsCliCerImportFile_btn:enabled,
+QPushButton#awsCliCerDelFile_btn:enabled,
+QPushButton#awsCliKeySelectFile_btn:enabled,
+QPushButton#awsCliKeyImportFile_btn:enabled,
+QPushButton#awsCliKeyDelFile_btn:enabled,
+QPushButton#awsCASelectFile_btn:enabled,
+QPushButton#mqttTlsCASelectFile_btn:enabled,
+QPushButton#mqttTlsCAImportFile_btn:enabled,
+QPushButton#mqttTlsCADelFile_btn:enabled,
+QPushButton#mqttTlsCliCerSelectFile_btn:enabled,
+QPushButton#mqttTlsCliCerImportFile_btn:enabled,
+QPushButton#mqttTlsCliCerDelFile_btn:enabled,
+QPushButton#mqttTlsCliKeySelectFile_btn:enabled,
+QPushButton#mqttTlsCliKeyImportFile_btn:enabled,
+QPushButton#mqttTlsCliKeyDelFile_btn:enabled,
+QPushButton#generalSave_btn:enabled,
+QPushButton#modbusAwsCASelectFile_btn:enabled,
+QPushButton#modbusAwsCAImportFile_btn:enabled,
+QPushButton#modbusAwsCADelFile_btn:enabled,
+QPushButton#modbusAwsCliCerSelectFile_btn:enabled,
+QPushButton#modbusAwsCliCerImportFile_btn:enabled,
+QPushButton#modbusAwsCliCerDelFile_btn:enabled,
+QPushButton#modbusAwsCliKeySelectFile_btn:enabled,
+QPushButton#modbusAwsCliKeyImportFile_btn:enabled,
+QPushButton#modbusAwsCliKeyDelFile_btn:enabled,
+QPushButton#modbusMqttTlsCASelectFile_btn:enabled,
+QPushButton#modbusMqttTlsCAImportFile_btn:enabled,
+QPushButton#modbusMqttTlsCADelFile_btn:enabled,
+QPushButton#modbusMqttTlsCliCerSelectFile_btn:enabled,
+QPushButton#modbusMqttTlsCliCerImportFile_btn:enabled,
+QPushButton#modbusMqttTlsCliCerDelFile_btn:enabled,
+QPushButton#modbusMqttTlsCliKeySelectFile_btn:enabled,
+QPushButton#modbusMqttTlsCliKeyImportFile_btn:enabled,
+QPushButton#modbusMqttTlsCliKeyDelFile_btn:enabled,
+QPushButton#modbusBasicSave_btn:enabled,
+QPushButton#rs232Save_btn:enabled,
+QPushButton#rs485Save_btn:enabled,
+QPushButton#deviceSettingSave_btn:enabled,
+QPushButton#nfcDeviceTimeSync_btn:enabled,
+QPushButton#modbusChannelFetch1_btn:enabled,
+QPushButton#modbusChannelFetch2_btn:enabled,
+QPushButton#modbusChannelFetch3_btn:enabled,
+QPushButton#modbusChannelFetch4_btn:enabled,
+QPushButton#modbusChannelFetch5_btn:enabled,
+QPushButton#modbusChannelFetch6_btn:enabled,
+QPushButton#modbusChannelFetch7_btn:enabled,
+QPushButton#modbusChannelFetch8_btn:enabled,
+QPushButton#modbusChannelFetch9_btn:enabled,
+QPushButton#modbusChannelFetch10_btn:enabled,
+QPushButton#modbusChannelFetch11_btn:enabled,
+QPushButton#modbusChannelFetch12_btn:enabled,
+QPushButton#modbusChannelFetch13_btn:enabled,
+QPushButton#modbusChannelFetch14_btn:enabled,
+QPushButton#modbusChannelFetch15_btn:enabled,
+QPushButton#modbusChannelFetch16_btn:enabled,
+QPushButton#n1ChannelFetch1_btn:enabled,
+QPushButton#n1ChannelFetch2_btn:enabled,
+QPushButton#n1ChannelFetch3_btn:enabled,
+QPushButton#n1ChannelFetch4_btn:enabled,
+QPushButton#n1ChannelFetch5_btn:enabled,
+QPushButton#n1ChannelFetch6_btn:enabled,
+QPushButton#n1ChannelFetch7_btn:enabled,
+QPushButton#n1ChannelFetch8_btn:enabled,
+QPushButton#calibrationSettingTemp_btn:enabled,
+QPushButton#calibrationSettingHumi_btn:enabled,
+QPushButton#calibrationSettingIllumi_btn:enabled,
+QPushButton#calibrationSettingCo2_btn:enabled,
+QPushButton#calibrationSettingTVOC_btn:enabled,
+QPushButton#calibrationSettingBarometric_btn:enabled,
+QPushButton#calibrationSettingSoil_btn:enabled,
+QPushButton#calibrationSettingLiquid_btn:enabled,
+QPushButton#calibrationSettingDistance_btn:enabled,
+QPushButton#calibrationSettingPAR_btn:enabled
+{
+	background-color: rgb(94, 154, 234);
+	color: white;
+}
+QPushButton#nfcReadLora_btn:!enabled,
+QPushButton#loraApply_btn:!enabled,
+QPushButton#nfcReadStatus_btn:!enabled,
+QPushButton#nfcReadDevSetting_btn:!enabled,
+QPushButton#nfcWriteDevSetting_btn:!enabled,
+QPushButton#nfcStatusPower_btn:!enabled,
+QPushButton#awsCAImportFile_btn:!enabled,
+QPushButton#awsCADelFile_btn:!enabled,
+QPushButton#awsCliCerSelectFile_btn:!enabled,
+QPushButton#awsCliCerImportFile_btn:!enabled,
+QPushButton#awsCliCerDelFile_btn:!enabled,
+QPushButton#awsCliKeySelectFile_btn:!enabled,
+QPushButton#awsCliKeyImportFile_btn:!enabled,
+QPushButton#awsCliKeyDelFile_btn:!enabled,
+QPushButton#awsCASelectFile_btn:!enabled,
+QPushButton#mqttTlsCASelectFile_btn:!enabled,
+QPushButton#mqttTlsCAImportFile_btn:!enabled,
+QPushButton#mqttTlsCADelFile_btn:!enabled,
+QPushButton#mqttTlsCliCerSelectFile_btn:!enabled,
+QPushButton#mqttTlsCliCerImportFile_btn:!enabled,
+QPushButton#mqttTlsCliCerDelFile_btn:!enabled,
+QPushButton#mqttTlsCliKeySelectFile_btn:!enabled,
+QPushButton#mqttTlsCliKeyImportFile_btn:!enabled,
+QPushButton#mqttTlsCliKeyDelFile_btn:!enabled,
+QPushButton#generalSave_btn:!enabled,
+QPushButton#modbusAwsCASelectFile_btn:!enabled,
+QPushButton#modbusAwsCAImportFile_btn:!enabled,
+QPushButton#modbusAwsCADelFile_btn:!enabled,
+QPushButton#modbusAwsCliCerSelectFile_btn:!enabled,
+QPushButton#modbusAwsCliCerImportFile_btn:!enabled,
+QPushButton#modbusAwsCliCerDelFile_btn:!enabled,
+QPushButton#modbusAwsCliKeySelectFile_btn:!enabled,
+QPushButton#modbusAwsCliKeyImportFile_btn:!enabled,
+QPushButton#modbusAwsCliKeyDelFile_btn:!enabled,
+QPushButton#modbusMqttTlsCASelectFile_btn:!enabled,
+QPushButton#modbusMqttTlsCAImportFile_btn:!enabled,
+QPushButton#modbusMqttTlsCADelFile_btn:!enabled,
+QPushButton#modbusMqttTlsCliCerSelectFile_btn:!enabled,
+QPushButton#modbusMqttTlsCliCerImportFile_btn:!enabled,
+QPushButton#modbusMqttTlsCliCerDelFile_btn:!enabled,
+QPushButton#modbusMqttTlsCliKeySelectFile_btn:!enabled,
+QPushButton#modbusMqttTlsCliKeyImportFile_btn:!enabled,
+QPushButton#modbusMqttTlsCliKeyDelFile_btn:!enabled,
+QPushButton#modbusBasicSave_btn:!enabled
+QPushButton#rs232Save_btn:!enabled,
+QPushButton#rs485Save_btn:!enabled,
+QPushButton#deviceSettingSave_btn:!enabled,
+QPushButton#nfcDeviceTimeSync_btn:!enabled,
+QPushButton#modbusChannelFetch1_btn:!enabled,
+QPushButton#modbusChannelFetch2_btn:!enabled,
+QPushButton#modbusChannelFetch3_btn:!enabled,
+QPushButton#modbusChannelFetch4_btn:!enabled,
+QPushButton#modbusChannelFetch5_btn:!enabled,
+QPushButton#modbusChannelFetch6_btn:!enabled,
+QPushButton#modbusChannelFetch7_btn:!enabled,
+QPushButton#modbusChannelFetch8_btn:!enabled,
+QPushButton#modbusChannelFetch9_btn:!enabled,
+QPushButton#modbusChannelFetch10_btn:!enabled,
+QPushButton#modbusChannelFetch11_btn:!enabled,
+QPushButton#modbusChannelFetch12_btn:!enabled,
+QPushButton#modbusChannelFetch13_btn:!enabled,
+QPushButton#modbusChannelFetch14_btn:!enabled,
+QPushButton#modbusChannelFetch15_btn:!enabled,
+QPushButton#modbusChannelFetch16_btn:!enabled,
+QPushButton#n1ChannelFetch1_btn:!enabled,
+QPushButton#n1ChannelFetch2_btn:!enabled,
+QPushButton#n1ChannelFetch3_btn:!enabled,
+QPushButton#n1ChannelFetch4_btn:!enabled,
+QPushButton#n1ChannelFetch5_btn:!enabled,
+QPushButton#n1ChannelFetch6_btn:!enabled,
+QPushButton#n1ChannelFetch7_btn:!enabled,
+QPushButton#n1ChannelFetch8_btn:!enabled,
+QPushButton#calibrationSettingTemp_btn:!enabled,
+QPushButton#calibrationSettingHumi_btn:!enabled,
+QPushButton#calibrationSettingIllumi_btn:!enabled,
+QPushButton#calibrationSettingCo2_btn:!enabled,
+QPushButton#calibrationSettingTVOC_btn:!enabled,
+QPushButton#calibrationSettingBarometric_btn:!enabled,
+QPushButton#calibrationSettingSoil_btn:!enabled,
+QPushButton#calibrationSettingLiquid_btn:!enabled,
+QPushButton#calibrationSettingDistance_btn:!enabled,
+QPushButton#calibrationSettingPAR_btn:!enabled
+
+{
+	background-color: rgb(117, 117, 117);
+	color: rgb(255, 255, 255);
+	border-radius:5px 5px 5px 5px;
+}
+QPushButton#nfcReadLora_btn:enabled:hover,
+QPushButton#loraApply_btn:enabled:hover,
+QPushButton#nfcReadStatus_btn:enabled:hover,
+QPushButton#nfcReadDevSetting_btn:enabled:hover,
+QPushButton#nfcWriteDevSetting_btn:enabled:hover,
+QPushButton#nfcStatusPower_btn:enabled:hover,
+QPushButton#awsCAImportFile_btn:enabled:hover,
+QPushButton#awsCADelFile_btn:enabled:hover,
+QPushButton#awsCliCerSelectFile_btn:enabled:hover,
+QPushButton#awsCliCerImportFile_btn:enabled:hover,
+QPushButton#awsCliCerDelFile_btn:enabled:hover,
+QPushButton#awsCliKeySelectFile_btn:enabled:hover,
+QPushButton#awsCliKeyImportFile_btn:enabled:hover,
+QPushButton#awsCliKeyDelFile_btn:enabled:hover,
+QPushButton#awsCASelectFile_btn:enabled:hover,
+QPushButton#mqttTlsCASelectFile_btn:enabled:hover,
+QPushButton#mqttTlsCAImportFile_btn:enabled:hover,
+QPushButton#mqttTlsCADelFile_btn:enabled:hover,
+QPushButton#mqttTlsCliCerSelectFile_btn:enabled:hover,
+QPushButton#mqttTlsCliCerImportFile_btn:enabled:hover,
+QPushButton#mqttTlsCliCerDelFile_btn:enabled:hover,
+QPushButton#mqttTlsCliKeySelectFile_btn:enabled:hover,
+QPushButton#mqttTlsCliKeyImportFile_btn:enabled:hover,
+QPushButton#mqttTlsCliKeyDelFile_btn:enabled:hover,
+QPushButton#generalSave_btn:enabled:hover,
+QPushButton#modbusAwsCASelectFile_btn:enabled:hover,
+QPushButton#modbusAwsCAImportFile_btn:enabled:hover,
+QPushButton#modbusAwsCADelFile_btn:enabled:hover,
+QPushButton#modbusAwsCliCerSelectFile_btn:enabled:hover,
+QPushButton#modbusAwsCliCerImportFile_btn:enabled:hover,
+QPushButton#modbusAwsCliCerDelFile_btn:enabled:hover,
+QPushButton#modbusAwsCliKeySelectFile_btn:enabled:hover,
+QPushButton#modbusAwsCliKeyImportFile_btn:enabled:hover,
+QPushButton#modbusAwsCliKeyDelFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCASelectFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCAImportFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCADelFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCliCerSelectFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCliCerImportFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCliCerDelFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCliKeySelectFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCliKeyImportFile_btn:enabled:hover,
+QPushButton#modbusMqttTlsCliKeyDelFile_btn:enabled:hover,
+QPushButton#modbusBasicSave_btn:enabled:hover
+QPushButton#rs232Save_btn:enabled:hover,
+QPushButton#rs485Save_btn:enabled:hover,
+QPushButton#deviceSettingSave_btn:enabled:hover,
+QPushButton#nfcDeviceTimeSync_btn:enabled:hover,
+QPushButton#modbusChannelFetch1_btn:enabled:hover,
+QPushButton#modbusChannelFetch2_btn:enabled:hover,
+QPushButton#modbusChannelFetch3_btn:enabled:hover,
+QPushButton#modbusChannelFetch4_btn:enabled:hover,
+QPushButton#modbusChannelFetch5_btn:enabled:hover,
+QPushButton#modbusChannelFetch6_btn:enabled:hover,
+QPushButton#modbusChannelFetch7_btn:enabled:hover,
+QPushButton#modbusChannelFetch8_btn:enabled:hover,
+QPushButton#modbusChannelFetch9_btn:enabled:hover,
+QPushButton#modbusChannelFetch10_btn:enabled:hover,
+QPushButton#modbusChannelFetch11_btn:enabled:hover,
+QPushButton#modbusChannelFetch12_btn:enabled:hover,
+QPushButton#modbusChannelFetch13_btn:enabled:hover,
+QPushButton#modbusChannelFetch14_btn:enabled:hover,
+QPushButton#modbusChannelFetch15_btn:enabled:hover,
+QPushButton#modbusChannelFetch16_btn:enabled:hover,
+QPushButton#n1ChannelFetch1_btn:enabled:hover,
+QPushButton#n1ChannelFetch2_btn:enabled:hover,
+QPushButton#n1ChannelFetch3_btn:enabled:hover,
+QPushButton#n1ChannelFetch4_btn:enabled:hover,
+QPushButton#n1ChannelFetch5_btn:enabled:hover,
+QPushButton#n1ChannelFetch6_btn:enabled:hover,
+QPushButton#n1ChannelFetch7_btn:enabled:hover,
+QPushButton#n1ChannelFetch8_btn:enabled:hover,
+QPushButton#calibrationSettingTemp_btn:enabled:hover,
+QPushButton#calibrationSettingHumi_btn:enabled:hover,
+QPushButton#calibrationSettingIllumi_btn:enabled:hover,
+QPushButton#calibrationSettingCo2_btn:enabled:hover,
+QPushButton#calibrationSettingTVOC_btn:enabled:hover,
+QPushButton#calibrationSettingBarometric_btn:enabled:hover,
+QPushButton#calibrationSettingSoil_btn:enabled:hover,
+QPushButton#calibrationSettingLiquid_btn:enabled:hover,
+QPushButton#calibrationSettingDistance_btn:enabled:hover,
+QPushButton#calibrationSettingPAR_btn:enabled:hover
+
+{
+	background: rgb(89, 147, 222)
+}
+QPushButton#nfcReadLora_btn:enabled:pressed,
+QPushButton#loraApply_btn:enabled:pressed,
+QPushButton#nfcReadStatus_btn:enabled:pressed,
+QPushButton#nfcReadDevSetting_btn:enabled:pressed,
+QPushButton#nfcWriteDevSetting_btn:enabled:pressed,
+QPushButton#nfcStatusPower_btn:enabled:pressed,
+QPushButton#awsCAImportFile_btn:enabled:pressed,
+QPushButton#awsCADelFile_btn:enabled:pressed,
+QPushButton#awsCliCerSelectFile_btn:enabled:pressed,
+QPushButton#awsCliCerImportFile_btn:enabled:pressed,
+QPushButton#awsCliCerDelFile_btn:enabled:pressed,
+QPushButton#awsCliKeySelectFile_btn:enabled:pressed,
+QPushButton#awsCliKeyImportFile_btn:enabled:pressed,
+QPushButton#awsCliKeyDelFile_btn:enabled:pressed,
+QPushButton#awsCASelectFile_btn:enabled:pressed,
+QPushButton#mqttTlsCASelectFile_btn:enabled:pressed,
+QPushButton#mqttTlsCAImportFile_btn:enabled:pressed,
+QPushButton#mqttTlsCADelFile_btn:enabled:pressed,
+QPushButton#mqttTlsCliCerSelectFile_btn:enabled:pressed,
+QPushButton#mqttTlsCliCerImportFile_btn:enabled:pressed,
+QPushButton#mqttTlsCliCerDelFile_btn:enabled:pressed,
+QPushButton#mqttTlsCliKeySelectFile_btn:enabled:pressed,
+QPushButton#mqttTlsCliKeyImportFile_btn:enabled:pressed,
+QPushButton#mqttTlsCliKeyDelFile_btn:enabled:pressed,
+QPushButton#generalSave_btn:enabled:pressed,
+QPushButton#modbusAwsCASelectFile_btn:enabled:pressed,
+QPushButton#modbusAwsCAImportFile_btn:enabled:pressed,
+QPushButton#modbusAwsCADelFile_btn:enabled:pressed,
+QPushButton#modbusAwsCliCerSelectFile_btn:enabled:pressed,
+QPushButton#modbusAwsCliCerImportFile_btn:enabled:pressed,
+QPushButton#modbusAwsCliCerDelFile_btn:enabled:pressed,
+QPushButton#modbusAwsCliKeySelectFile_btn:enabled:pressed,
+QPushButton#modbusAwsCliKeyImportFile_btn:enabled:pressed,
+QPushButton#modbusAwsCliKeyDelFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCASelectFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCAImportFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCADelFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCliCerSelectFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCliCerImportFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCliCerDelFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCliKeySelectFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCliKeyImportFile_btn:enabled:pressed,
+QPushButton#modbusMqttTlsCliKeyDelFile_btn:enabled:pressed,
+QPushButton#modbusBasicSave_btn:enabled:pressed
+QPushButton#rs232Save_btn:enabled:pressed,
+QPushButton#rs485Save_btn:enabled:pressed,
+QPushButton#deviceSettingSave_btn:enabled:pressed,
+QPushButton#nfcDeviceTimeSync_btn:enabled:pressed,
+QPushButton#modbusChannelFetch1_btn:enabled:pressed,
+QPushButton#modbusChannelFetch2_btn:enabled:pressed,
+QPushButton#modbusChannelFetch3_btn:enabled:pressed,
+QPushButton#modbusChannelFetch4_btn:enabled:pressed,
+QPushButton#modbusChannelFetch5_btn:enabled:pressed,
+QPushButton#modbusChannelFetch6_btn:enabled:pressed,
+QPushButton#modbusChannelFetch7_btn:enabled:pressed,
+QPushButton#modbusChannelFetch8_btn:enabled:pressed,
+QPushButton#modbusChannelFetch9_btn:enabled:pressed,
+QPushButton#modbusChannelFetch10_btn:enabled:pressed,
+QPushButton#modbusChannelFetch11_btn:enabled:pressed,
+QPushButton#modbusChannelFetch12_btn:enabled:pressed,
+QPushButton#modbusChannelFetch13_btn:enabled:pressed,
+QPushButton#modbusChannelFetch14_btn:enabled:pressed,
+QPushButton#modbusChannelFetch15_btn:enabled:pressed,
+QPushButton#modbusChannelFetch16_btn:enabled:pressed,
+QPushButton#n1ChannelFetch1_btn:enabled:pressed,
+QPushButton#n1ChannelFetch2_btn:enabled:pressed,
+QPushButton#n1ChannelFetch3_btn:enabled:pressed,
+QPushButton#n1ChannelFetch4_btn:enabled:pressed,
+QPushButton#n1ChannelFetch5_btn:enabled:pressed,
+QPushButton#n1ChannelFetch6_btn:enabled:pressed,
+QPushButton#n1ChannelFetch7_btn:enabled:pressed,
+QPushButton#n1ChannelFetch8_btn:enabled:pressed,
+QPushButton#calibrationSettingTemp_btn:enabled:pressed,
+QPushButton#calibrationSettingHumi_btn:enabled:pressed,
+QPushButton#calibrationSettingIllumi_btn:enabled:pressed,
+QPushButton#calibrationSettingCo2_btn:enabled:pressed,
+QPushButton#calibrationSettingTVOC_btn:enabled:pressed,
+QPushButton#calibrationSettingBarometric_btn:enabled:pressed,
+QPushButton#calibrationSettingSoil_btn:enabled:pressed,
+QPushButton#calibrationSettingLiquid_btn:enabled:pressed,
+QPushButton#calibrationSettingDistance_btn:enabled:pressed,
+QPushButton#calibrationSettingPAR_btn:enabled:pressed
+{
+	background: rgb(103, 161, 231)
+}
+
+
+/***************************************************************** QLineEdit ************************/
+QLineEdit
+{
+    border: 1px solid #a1a1a1;
+	font-size:13px;font-family:"Arial"
+}
+QLineEdit:!enabled {
+	background: rgb(240, 240, 240);
+}
+QLineEdit:hover
+{
+	border: 1px solid rgb(58, 65, 70);
+}
+QLineEdit:focus
+{
+	border: 1px solid rgb(94, 154, 234);
+}
+/***************************************************************** QCheckBox ************************/
+QCheckBox
+{
+    font-size:13px;font-family:"Arial"
+}
+/***************************************************************** QLabel ************************/
+QLabel:enabled
+{
+    font-size:13px;font-family:"Arial";
+    color: rgb(0, 0, 0);
+}
+QLabel#joinStatus_label:enabled,
+QLabel#nfcDevStatus_label:enabled
+{
+    font-size:13px;font-family:"Arial";
+    color: rgb(0, 255, 0);
+}
+QLabel#co2_label:!enabled,
+QLabel#tvoc_label:!enabled,
+QLabel#temperature_label:!enabled,
+QLabel#humidity_label:!enabled,
+QLabel#activity_label:!enabled,
+QLabel#luminance_label:!enabled,
+QLabel#barometric_label:!enabled,
+QLabel#joinStatus_label:!enabled,
+QLabel#nfcDevStatus_label:!enabled
+{
+    font-size:13px;font-family:"Arial";
+    color: rgb(130, 130, 130);
+}
+
+/***************************************************************** QTextEdit ************************/
+QTextEdit
+{
+    border: 1px solid #a1a1a1;
+	font-size:13px;font-family:"Arial"
+}
+QTextEdit:!enabled {
+	background: rgb(240, 240, 240);
+}
+QTextEdit:hover
+{
+        border: 1px solid rgb(58, 65, 70);
+}
+QTextEdit:focus
+{
+        border: 1px solid rgb(94, 154, 234);
+}
+
+/***************************************************************** QGroupBox ************************/
+QGroupBox#n1ChannelSet_gb
+{
+	border:0px
+}
+
+QGroupBox
+{
+    font-size: 16px;
+    font-weight: bold;
+	font-family:"Arial";
+}
+
+/***************************************************************** QToolButtom ************************/
+QToolButton{
+	border:none;
+} 
+
+/***************************************************************** QComobox ************************/
+QComboBox{
+	border-radius: 0px;
+	border: 1px solid gray;
+	font-size:13px;font-family:"Arial"
+}
+
+QComboBox:pressed{
+	border-radius: 2px;
+	border: 1px solid rgb(255,97,0);
+}
+
+QComboBox:editable{
+	position: relative;
+    /*top: 1px; left: 1px;*/
+	background: rgb(180,180,180);
+	
+}
+QComboBox:!editable, QComboBox::drop-down:editable {
+	background: rgb(255,255,255);   
+	border: 1px solid gray;
+}
+
+ /* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+	border: 1px solid gray;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #FFFFFF,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+QComboBox::down-arrow {
+     /*image: url(:/images/down_arrow.png);*/
+	 /*border: 1px solid rgb(0,0,0);*/
+}
+
+QComboBox::down-arrow:pressed {
+     position: relative;
+     top: 1px; left: 1px;
+	 /*border: 2px solid rgb(255,97,0);*/
+	 /*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(28, 162, 214, 255), stop:1 rgba(4, 121, 175, 255))*/
+}
+
+QComboBox QAbstractItemView {
+	/*background: rgb(255,255,255);*/
+	/*border: 2px solid #32435E;*/
+	selection-color: rgb(255,255,255);
+	/*selection-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(28, 162, 214, 255), stop:1 rgba(4, 121, 175, 255));*/
+	selection-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #13b6fb, stop:1 #0092d2);
+}
+
+/***************************************************************** QFrame ************************/
+QFrame#frame_23,
+QFrame#n1Channel1_frame,
+QFrame#n1Channel2_frame,
+QFrame#n1Channel3_frame,
+QFrame#n1Channel4_frame,
+QFrame#n1Channel5_frame,
+QFrame#n1Channel6_frame,
+QFrame#n1Channel7_frame,
+QFrame#n1Channel8_frame,
+QFrame#modbusChannel1_frame,
+QFrame#modbusChannel2_frame,
+QFrame#modbusChannel3_frame,
+QFrame#modbusChannel4_frame,
+QFrame#modbusChannel5_frame,
+QFrame#modbusChannel6_frame,
+QFrame#modbusChannel7_frame,
+QFrame#modbusChannel8_frame,
+QFrame#modbusChannel9_frame,
+QFrame#modbusChannel10_frame,
+QFrame#modbusChannel11_frame,
+QFrame#modbusChannel12_frame,
+QFrame#modbusChannel13_frame,
+QFrame#modbusChannel14_frame,
+QFrame#modbusChannel15_frame,
+QFrame#modbusChannel16_frame
+{
+	border: 1px solid rgb(135, 135, 135);
+	border-radius:5px 5px 1px 1px;
+}
+QFrame#serialInfoTitleBar_frame,
+QFrame#statusTitleBar_frame,
+QFrame#gengeralTitleBar_frame,
+QFrame#lorawanTitleBar_frame,
+QFrame#channelTitleBar_frame,
+QFrame#settingTitleBar_frame,
+QFrame#settingEditTitleBar_frame,
+QFrame#applicatonTitleBar_frame,
+QFrame#upgradeTitleBar_frame,
+QFrame#deviceSettingTitleBar_frame,
+QFrame#frame_12,
+QFrame#update_frame
+{
+	background-color: rgb(255, 255, 255);
+	border: 0px
+}
+
+
+/***************************************************************** QTabWidget ************************/
+
+QTabWidget::pane 
+{
+    border-top: 2px solid #000000;
+}
+
+QTabWidget::tab-bar 
+{
+    left: 5px; /* move to the right by 5px */
+}
+
+QTabBar::tab 
+{
+	border-radius:5px 5px 0px 0px;
+    height:35;
+    width:180;
+    border: 2px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+	color: rgb(255, 255, 255);
+	font-size:16px;font-family:"Arial";font-weight:bold
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover 
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	background-color: #245492;
+}
+
+QTabBar::tab:selected 
+{
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}
+
+QTabBar::tab:!selected 
+{
+	background-color: rgb(94, 154, 234);
+    margin-top: 2px; /* make non-selected tabs look smaller */
+}

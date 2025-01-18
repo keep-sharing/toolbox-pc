@@ -1,0 +1,326 @@
+
+/***************************************************************** QStackedWidget ************************/
+QStackedWidget#stackedWidget
+{
+	background-color:#edf2f6;
+}
+QWidget#scrollAreaWidgetContents_2,
+QWidget#scrollAreaWidgetContents,
+QWidget#serialBasic_scrollAreaWidget,
+QWidget#rs485_scrollAreaWidget,
+QWidget#rs232_scrollAreaWidget,
+QWidget#n1Basic_scrollAreaWidget,
+QWidget#n1Serial_scrollAreaWidget,
+QWidget#n1AI_scrollAreaWidget,
+QWidget#n1GPIO_scrollAreaWidget,
+QWidget#modbusChannel_scrollAreaWidget,
+QWidget#loraBasic_scrollAreaWidget,
+QWidget#loraChannel_scrollAreaWidgetContents,
+QWidget#loraAdvanced_scrollAreaWidget,
+QWidget#channel_scrollAreaWidget,
+QWidget#deviceSetting_scrollAreaWidget,
+QWidget#scrollAreaWidgetContents_3
+{
+	background-color: rgb(255, 255, 255);
+}
+
+QScrollArea#loraStatus_scrollArea
+{
+	font-size:15px;
+	font-family:"Arial" ;
+	border:none;
+	background-color:#edf2f6;
+}
+QWidget#loraStatusWidgetContents
+{
+	background-color:#edf2f6;
+}
+/***************************************************************** QPushButton ************************/
+QPushButton[ul_pushbutton="true"]{
+	background-color: rgb(94, 154, 234);
+	color: rgb(255, 255, 255);
+    border-radius:5px 5px 5px 5px;
+	font-size:13px;font-family:"Arial"
+}
+QPushButton[ul_pushbutton="true"]:enabled {
+        background-color: rgb(94, 154, 234);
+        color: white;
+}
+QPushButton[ul_pushbutton="true"]:!enabled {
+	background-color: rgb(117, 117, 117);
+	color: rgb(255, 255, 255);
+	border-radius:5px 5px 5px 5px;
+}
+QPushButton[ul_pushbutton="true"]:enabled:hover{
+        background: rgb(89, 147, 222)
+}
+QPushButton[ul_pushbutton="true"]:enabled:pressed{
+        background: rgb(103, 161, 231)
+}
+
+/***************************************************************** QLineEdit ************************/
+QLineEdit
+{
+    border: 1px solid #a1a1a1;
+	font-size:13px;font-family:"Arial"
+}
+QLineEdit:!enabled {
+	background: rgb(240, 240, 240);
+}
+QLineEdit:hover
+{
+	border: 1px solid rgb(58, 65, 70);
+}
+QLineEdit:focus
+{
+	border: 1px solid rgb(94, 154, 234);
+}
+/***************************************************************** QCheckBox ************************/
+QCheckBox
+{
+    font-size:13px;font-family:"Arial"
+}
+/***************************************************************** QLabel ************************/
+QLabel:enabled
+{
+    font-size:13px;font-family:"Arial";
+    color: rgb(0, 0, 0);
+}
+QLabel#joinStatus_label:enabled,
+QLabel#nfcDevStatus_label:enabled
+{
+    font-size:13px;font-family:"Arial";
+    color: rgb(0, 255, 0);
+}
+QLabel#co2_label:!enabled,
+QLabel#tvoc_label:!enabled,
+QLabel#temperature_label:!enabled,
+QLabel#humidity_label:!enabled,
+QLabel#activity_label:!enabled,
+QLabel#luminance_label:!enabled,
+QLabel#barometric_label:!enabled,
+QLabel#joinStatus_label:!enabled,
+QLabel#nfcDevStatus_label:!enabled
+{
+    font-size:13px;font-family:"Arial";
+    color: rgb(130, 130, 130);
+}
+
+/***************************************************************** QTextEdit ************************/
+QTextEdit
+{
+    border: 1px solid #a1a1a1;
+	font-size:13px;font-family:"Arial"
+}
+QTextEdit:!enabled {
+	background: rgb(240, 240, 240);
+}
+QTextEdit:hover
+{
+        border: 1px solid rgb(58, 65, 70);
+}
+QTextEdit:focus
+{
+        border: 1px solid rgb(94, 154, 234);
+}
+
+/***************************************************************** QGroupBox ************************/
+QGroupBox#n1ChannelSet_gb
+{
+	border:0px
+}
+
+QGroupBox
+{
+    font-size: 16px;
+    font-weight: bold;
+	font-family:"Arial";
+}
+
+/***************************************************************** QToolButton ************************/
+QToolButton[tipType="questionMark"]{
+	image:url(:/new/image/tip.png);
+	border:none
+}
+QToolButton[tipType="SuccFail"]:enabled {
+	image:url(:/new/image/success.png);
+	border:none
+}
+QToolButton[tipType="SuccFail"]:!enabled {
+	image:url(:/new/image/failed.png);
+	border:none
+}
+QToolButton[tipType="Delete"]{
+	image:url(:/new/image/12.png);
+	border:none
+}
+QToolButton[tipType="Add"]{
+	image:url(:/new/image/11.png);
+	border:none
+}
+/***************************************************************** QComobox ************************/
+QComboBox{
+	border-radius: 0px;
+	border: 1px solid gray;
+	font-size:13px;font-family:"Arial"
+}
+
+QComboBox:pressed{
+	border-radius: 2px;
+	border: 1px solid rgb(255,97,0);
+}
+
+QComboBox:editable{
+	position: relative;
+    /*top: 1px; left: 1px;*/
+	background: rgb(180,180,180);
+	
+}
+QComboBox:!editable, QComboBox::drop-down:editable {
+	background: rgb(255,255,255);   
+	border: 1px solid gray;
+}
+
+ /* QComboBox gets the "on" state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+	border: 1px solid gray;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #FFFFFF,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+QComboBox::down-arrow {
+     /*image: url(:/images/down_arrow.png);*/
+	 /*border: 1px solid rgb(0,0,0);*/
+}
+
+QComboBox::down-arrow:pressed {
+     position: relative;
+     top: 1px; left: 1px;
+	 /*border: 2px solid rgb(255,97,0);*/
+	 /*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(28, 162, 214, 255), stop:1 rgba(4, 121, 175, 255))*/
+}
+
+QComboBox QAbstractItemView {
+	/*background: rgb(255,255,255);*/
+	/*border: 2px solid #32435E;*/
+	selection-color: rgb(255,255,255);
+	/*selection-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(28, 162, 214, 255), stop:1 rgba(4, 121, 175, 255));*/
+	selection-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #13b6fb, stop:1 #0092d2);
+}
+
+/***************************************************************** QFrame ************************/
+QFrame#frame_23,
+QFrame#n1Channel1_frame,
+QFrame#n1Channel2_frame,
+QFrame#n1Channel3_frame,
+QFrame#n1Channel4_frame,
+QFrame#n1Channel5_frame,
+QFrame#n1Channel6_frame,
+QFrame#n1Channel7_frame,
+QFrame#n1Channel8_frame,
+QFrame#n1Channel9_frame,
+QFrame#n1Channel10_frame,
+QFrame#n1Channel11_frame,
+QFrame#n1Channel12_frame,
+QFrame#n1Channel13_frame,
+QFrame#n1Channel14_frame,
+QFrame#n1Channel15_frame,
+QFrame#n1Channel16_frame,
+QFrame#n1Channel17_frame,
+QFrame#n1Channel18_frame,
+QFrame#n1Channel18_frame,
+QFrame#n1Channel19_frame,
+QFrame#n1Channel20_frame,
+QFrame#modbusChannel1_frame,
+QFrame#modbusChannel2_frame,
+QFrame#modbusChannel3_frame,
+QFrame#modbusChannel4_frame,
+QFrame#modbusChannel5_frame,
+QFrame#modbusChannel6_frame,
+QFrame#modbusChannel7_frame,
+QFrame#modbusChannel8_frame,
+QFrame#modbusChannel9_frame,
+QFrame#modbusChannel10_frame,
+QFrame#modbusChannel11_frame,
+QFrame#modbusChannel12_frame,
+QFrame#modbusChannel13_frame,
+QFrame#modbusChannel14_frame,
+QFrame#modbusChannel15_frame,
+QFrame#modbusChannel16_frame
+{
+	border: 1px solid rgb(135, 135, 135);
+	border-radius:5px 5px 1px 1px;
+}
+QFrame#serialInfoTitleBar_frame,
+QFrame#statusTitleBar_frame,
+QFrame#gengeralTitleBar_frame,
+QFrame#lorawanTitleBar_frame,
+QFrame#channelTitleBar_frame,
+QFrame#settingTitleBar_frame,
+QFrame#settingEditTitleBar_frame,
+QFrame#applicatonTitleBar_frame,
+QFrame#upgradeTitleBar_frame,
+QFrame#deviceSettingTitleBar_frame,
+QFrame#frame_12,
+QFrame#frame_10,
+QFrame#frame_9
+{
+	background-color: rgb(255, 255, 255);
+	border: 0px
+}
+/**********************************************QTableView*************************************/
+QTableView{
+    background-color:#FFFFFF;
+    border:1px solid #E0DDDC;
+    border-bottom:1px solid #E0DDDC;
+    height:90px;
+    font-size:13px;font-family:"Arial"
+}
+
+/***************************************************************** QTabWidget ************************/
+
+QTabWidget::pane 
+{
+    border-top: 2px solid #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+QTabWidget::tab-bar 
+{
+    left: 5px; /* move to the right by 5px */
+}
+
+QTabBar::tab 
+{
+	border-radius:5px 5px 0px 0px;
+    height:35;
+    width:180;
+    border: 2px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+	color: rgb(255, 255, 255);
+	font-size:16px;font-family:"Arial";font-weight:bold
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover 
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	background-color: #245492;
+}
+
+QTabBar::tab:selected 
+{
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}
+
+QTabBar::tab:!selected 
+{
+	background-color: rgb(94, 154, 234);
+    margin-top: 2px; /* make non-selected tabs look smaller */
+}

@@ -1,0 +1,83 @@
+﻿//#define OEM_LHR_MILESIGHT
+//#define NEUTRAL_VERSION
+
+//#ifdef NEUTRAL_VERSION
+//    IDI_ICON1 ICON "Netural.ico"
+#ifdef OEM_LHR_MILESIGHT
+    IDI_ICON1 ICON "Milesight.ico"
+#else
+//    IDI_ICON1 ICON "favicon 512x512.ico"
+    IDI_ICON1 ICON DISCARDABLE "favicon 512x512.ico"
+#endif
+
+//#if defined(UNDER_CE)
+//#include <winbase.h>
+//#else
+//#include <winver.h>
+//#endif
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+#ifdef OEM_LHR_MILESIGHT
+    FILEVERSION 5,4,6
+    PRODUCTVERSION 5,4,6
+    FILEFLAGSMASK 0x3fL
+#else
+    FILEVERSION 1,0,0
+    PRODUCTVERSION 1,0,0
+    FILEFLAGSMASK 0x3fL
+#endif
+
+#ifdef _DEBUG
+    FILEFLAGS VS_FF_DEBUG
+#else
+    FILEFLAGS 0x0L
+#endif
+    FILEOS VOS__WINDOWS32
+    FILETYPE VFT_DLL
+    FILESUBTYPE 0x0L
+    BEGIN
+        BLOCK "StringFileInfo"
+        BEGIN
+            BLOCK "080404b0"
+            BEGIN
+#ifdef NEUTRAL_VERSION
+            VALUE "CompanyName", "Technology Co., Ltd\0"
+            VALUE "FileDescription", "ToolBox\0"
+            VALUE "FileVersion", "5.4.5\0"
+            VALUE "OriginalFilename", "ToolBox.exe\0"
+            VALUE "ProductName", "ToolBox\0"
+            VALUE "InternalName", "ToolBox.exe\0"
+#else
+#ifdef OEM_LHR_MILESIGHT
+            VALUE "CompanyName", "Milesight Technology Co., Ltd\0"
+            VALUE "FileDescription", "ToolBox\0"
+            VALUE "FileVersion", "5.4.6\0"
+            VALUE "ProductVersion", "5.4.6\0"
+            VALUE "LegalCopyright", "Copyright (C) Milesight Technology Co., Ltd\0"
+            VALUE "LegalTrademarks", "Milesight Technology Co., Ltd\0"
+            VALUE "OriginalFilename", "ToolBox.exe\0"
+            VALUE "ProductName", "ToolBox\0"
+            VALUE "InternalName", "ToolBox.exe\0"
+#else
+            VALUE "CompanyName", "Milesight Technology Co., Ltd\0"
+            VALUE "FileDescription", "ToolBox\0"
+            VALUE "FileVersion", "1.0.0\0"
+            VALUE "ProductVersion", "1.0.0\0"
+            VALUE "LegalCopyright", "Copyright (C) Milesight Technology Co., Ltd\0"
+            VALUE "LegalTrademarks", "Milesight Technology Co., Ltd\0"
+            VALUE "OriginalFilename", "ToolBox.exe\0"
+            VALUE "ProductName", "ToolBox\0"
+            VALUE "InternalName", "ToolBox.exe\0"
+#endif
+#endif
+
+
+           END
+        END
+
+        BLOCK "VarFileInfo"
+        BEGIN
+            VALUE "Translation", 0x804, 1200
+        END
+    END
